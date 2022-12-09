@@ -72,5 +72,5 @@ We may make adjustments or changes to this Privacy Policy from time to time, and
 
 ## VII.How to contact us
 
-📝 If you have any questions, comments or suggestions regarding this privacy policy, please contact us at **Email**: technology.klink@gmail.com and **telegram**: `@KlinkTechnology`
+📝 If you have any questions, comments or suggestions regarding this privacy policy, please contact us at **Email**: technology.klink@gmail.com and **Telegram**: `@KlinkTechnology`
 
