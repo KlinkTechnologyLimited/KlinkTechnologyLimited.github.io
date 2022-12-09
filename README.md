@@ -74,5 +74,7 @@ We may make adjustments or changes to this Privacy Policy from time to time, and
 
 📝 If you have any questions, comments or suggestions regarding this privacy policy, please contact us at **Email**: technology.klink@gmail.com and **Telegram**: `@KlinkTechnology`
 
-![screen gif showing the header of the glitch-in-bio remix being updated to say "hello, world!"]([https://i.makeagif.com/media/4-12-2017/DvbMnc.gif](https://i.gifer.com/CRp9.gif))
-
+![screen gif showing the header of the glitch-in-bio remix being updated to say "hello, world!"](https://media2.giphy.com/media/F0J0uiNS8n0BHSQmDt/giphy.gif) 
+<a href="https://www.facebook.com/KlinkTrade">
+  <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"/>
+</a>
