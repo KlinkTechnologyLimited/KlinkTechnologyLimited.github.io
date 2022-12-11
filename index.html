@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Headers · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="header_css.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+            <path
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+            <path
+                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+            <path fill-rule="evenodd"
+                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+            <path
+                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+            <path
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+        </symbol>
+    </svg> -->
+    <main>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/Icon_Mark.jpg" alt="" width="25" height="25"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <a href="#"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                        <span class="fs-4">Klink</span>
+                    </a>
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link nav-active active">Privacy & Policy </a></li>
+                </ul>
+            </header>
+        </div>
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                Privacy Policy
+            </h3>
+
+            <article class="blog-post">
+                <h2 class="blog-post-title">Klink User Privacy Policy</h2>
+                <p class="blog-post-meta">December 1, 2022 by <a href="https://www.facebook.com/KlinkTrade">Klink</a>
+                </p>
+
+                <p>Thank you for using the Klink App, which was designed and developed by Klink Technologies Limited
+                    ("we"), which owns all intellectual property rights. We understand the importance of your personal
+                    information and will do our best to protect the security and reliability of your personal
+                    information. We are committed to maintaining your trust in us and abide by the following principles
+                    to protect your personal information: the principle of consistent rights and responsibilities, the
+                    principle of clear purpose, the principle of choice of consent, the principle of minimum sufficient,
+                    the principle of ensuring security, the principle of subject participation, the principle of
+                    openness and transparency. At the same time, we promise that we will take appropriate safety
+                    protection measures to protect your personal information in accordance with the mature safety
+                    standards in the industry. Please read and understand this Privacy Policy carefully before using our
+                    products (or services).
+                </p>
+                <hr>
+
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                    style="background-image: url('https://camo.githubusercontent.com/e37ba631e0cde2bcb7c0c4cb4ddcbf9ebc464428f85a85a913fe2287f33ef192/68747470733a2f2f6d656469612e74656e6f722e636f6d2f476653582d753756474d3441414141432f636f64696e672e676966');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Coding For Better Experience</h2>
+                    </div>
+                </div>
+                <hr>
+
+                <h3>
+                    I. How we collect and use your personal information
+                </h3>
+
+                <p>
+                    Personal information means all kinds of information recorded by e-mail or other means that, alone or
+                    in combination with other information, can identify a specific natural person or reflect the
+                    activities of a specific natural person. We will only collect and use your personal information for
+                    the following purposes as described in this policy：
+                </p>
+                <!-- <blockquote class="blockquote">
+                    <p>Quoted text goes here.</p>
+                </blockquote> -->
+                <p>
+                    (a) Provide you with the service of viewing exchange rates and collecting information. We provide
+                    exchange rates, Gas prices and gold prices for our users. If you are using the most basic exchange
+                    rate checking function, then you do not need to register an account. If you wish to gain access to
+                    certain advanced features, then you will need to create an account. In order to complete the
+                    creation of an account, you may need to provide the following information: your name, cell phone
+                    number, e-mail address, created user name and password. However, if you do not provide this
+                    information, it will not affect the use of the basic functions of the Service. The information you
+                    provide above will be authorized to us continuously for the duration of your use of the Service.
+                    When you cancel your account, we will stop using and delete the above information.
+                </p>
+
+                <p>
+                    (b) To conduct internal data analysis and research, third party SDK statistical services, and to
+                    improve our products or services. We collect data based on your interactions with us and the choices
+                    you make, including your privacy settings and the products and features you use. The data we collect
+                    may include IP address, platform, timestamp, unique device identifier, iOS advertising identifier
+                    (IDFA), Android advertiser identifier, network card (MAC) address, International Mobile Equipment
+                    Identifier (IMEI), device model, end device operating system version, language location, time zone
+                    and network status. When we want to use the information for other purposes not described in this
+                    policy, we will ask for your consent in advance. When we use information collected for a specific
+                    purpose for other purposes, we will ask for your prior consent.
+                </p>
+
+                <p>
+                    (c) The permissions and related reasons that this App will request include the following categories.
+                </p>
+
+                <p>
+                    (d) Requesting access to the network: as software that relies on real-time exchange rate, gas price
+                    and gold price data, it needs access to the network in order to properly obtain the latest data,
+                    upload feedback information, submit business transactions, etc.
+                </p>
+
+                <p>
+                    (e) Request access to MAC address of cell phones: in order to collect abnormal or crash data and
+                    help technical staff to fix bugs in time.
+                </p>
+
+                <p>
+                    (f) Request permission to obtain IMEI information: in order to collect abnormal crash data and help
+                    technicians fix bugs in a timely manner
+                </p>
+
+                <p>
+                    (g) Request permission to obtain directional push: if an abnormal situation such as repeated login
+                    is detected in the user account, it is necessary to rely on the device number and other information
+                    to send alert notifications to the user
+                </p>
+                <hr>
+
+                <h3>
+                    II.How we share, transfer and publicly disclose your personal information
+                </h3>
+                <p>
+                    (a)Sharing We will not share your personal information with any other companies, organizations and
+                    individuals, except in the following cases: 1. Sharing with express consent: After obtaining your
+                    express consent, we will share your personal information with other parties. 2、We may share your
+                    personal information to the outside world in accordance with laws and regulations, or in accordance
+                    with the mandatory requirements of government authorities. 3. Sharing with authorized partners: Only
+                    to achieve the purposes stated in this privacy policy, some of our services will be provided by
+                    authorized partners. We may share some of your personal information with our partners in order to
+                    provide better customer service and user experience. These authorized partners may include: software
+                    service providers, smart device providers, system service providers, vendors, service providers, and
+                    analytics service type partners. We will not share your personal information with advertising,
+                    financial and credit services businesses without your authorization. We have strict confidentiality
+                    agreements with companies, organizations and individuals with whom we share personal information and
+                    require them to handle personal information in accordance with our instructions, this Privacy Policy
+                    and any other relevant confidentiality and security measures. If we transfer information beyond the
+                    scope of the agreement, we will obtain your authorization separately.
+                </p>
+                <p>
+                    (b)Transfer We will not transfer your personal information to any company, organization or
+                    individual, except in the following cases: 1. Transfer with express consent: After obtaining your
+                    express consent, we will transfer your personal information to other parties; 2. In the event of a
+                    merger, acquisition or bankruptcy and liquidation involving the transfer of personal information, we
+                    will ask the new company or organization holding your personal information to continue to be bound
+                    by this privacy policy before we ask the company or organization to seek your authorized consent
+                    again.
+                </p>
+                <p>
+                    (c)Public disclosure We will only publicly disclose your personal information under the following
+                    circumstances: 1. after obtaining your express consent; 2. disclosure based on law: we may publicly
+                    disclose your personal information when compelled to do so by law, legal process, litigation or
+                    government authorities.
+                </p>
+                <hr>
+
+                <h3>
+                    III.How we protect your personal information
+                </h3>
+                <p>
+                    (a)We have used security measures that meet industry standards to protect the personal information
+                    you provide against unauthorized access, public disclosure, use, modification, damage or loss of
+                    data. We will take all reasonably practicable steps to protect your personal information. We deploy
+                    access control mechanisms to ensure that only authorized personnel have access to personal
+                    information; and we conduct security and privacy training courses to enhance employee awareness of
+                    the importance of protecting personal information.
+                </p>
+                <p>
+                    (b)We will take all reasonably practicable steps to ensure that no unrelated personal information is
+                    collected. We will only retain your personal information for as long as is necessary to achieve the
+                    purposes described in this policy, unless an extended retention period is required or permitted by
+                    law.
+                </p>
+                <p>
+                    (c)The Internet is not an absolutely secure environment, and since e-mail, instant messaging, and
+                    communication with other of our users is not encrypted, we strongly recommend that you do not send
+                    personal information through such means. Please use complex passwords to help us keep your account
+                    secure.
+                </p>
+                <p>
+                    (d)About third-party SDK data protection. In order to implement certain functions that are
+                    indispensable in our products and to improve product security, our products may integrate
+                    third-party SDKs or other similar applications. These SDKs may collect your device information,
+                    browsing information, click information, etc., and store such information as log information. For
+                    the sake of your information security, we have agreed with the third-party SDK service providers on
+                    strict data security and confidentiality measures, so that they will strictly follow our entrusted
+                    service requirements and ensure that the collected information is only used for product
+                    function-related scenarios. This privacy agreement and strict compliance with our data privacy
+                    protection and security measures requirements. We will not share your personal information with them
+                    unless we have your consent.
+                </p>
+                <hr>
+
+                <h3>
+                    IV.Your rights
+                </h3>
+                <h5>
+                    We protect your right to exercise the following rights with respect to your personal information.
+                </h5>
+                <p>
+                    (a) Access to your personal information You have the right to access your personal information,
+                    subject to any exceptions provided by law or regulation. If you wish to exercise your right to
+                    access your data, you may do so yourself by going to: Edit Account Information - If you wish to
+                    access or edit your profile information in your account, change your password, add security
+                    information, etc., you may do so at "Profile - Edit Profile Information" to perform such actions. If
+                    you do not have access to this personal information through the methods described above, you can
+                    always send an email to technology.klink@gmail.com. We will respond to your request for access
+                    within 15 days. We will provide you with other personal information generated in the course of your
+                    use of our products or services, provided that we do not require excessive input. If you wish to
+                    exercise your data access rights, please send an email to technology.klink@gmail.com. Correction of
+                    your personal information When you discover an error in the personal information we have processed
+                    about you, you have the right to request that we make the correction. You can request corrections by
+                    going to "Profile - Edit Pofile Information". If you are unable to correct such personal information
+                    through the link above, you may do so at any time by sending an email to technology.klink@gmail.com.
+                    We will respond to your request for correction within 15 days.
+                </p>
+                <p>
+                    (b) Delete your personal information You can delete your personal information if: 1. If we handle
+                    personal information in violation of laws and regulations; 2. If we collect and use your personal
+                    information without your consent; 3. If we handle personal information in violation of our agreement
+                    with you; 4. If you no longer use our products or services, or you cancel your account; 5. If we no
+                    longer provide products or services to you. If you want to delete your personal information, you can
+                    delete your personal information by visiting "Profile - Edit Pofile Information". In response to
+                    your request for deletion, we will also notify the recipient of your personal information from us
+                    and request its prompt deletion. In addition, when making a request to delete an account, you will
+                    need to prove to us that you are the owner of the account. When you delete information from our
+                    service, we may not immediately delete the corresponding information from our backup system, but
+                    will delete such information when the backup is updated.
+                </p>
+                <p>
+                    (c) Changing the Scope of Your Authorized Consent Each business function requires some basic
+                    personal information to complete (see "Part I" of this Policy). You can give or withdraw your
+                    consent at any time for the collection and use of additional personal information collected. You can
+                    modify the scope of your authorization by accessing the Phone Rights Management Center. When you
+                    withdraw your authorization, the normal operation of some functions that require information based
+                    on your authorization may be affected, but will not affect the processing of personal information
+                    previously carried out based on your authorization. If you do not wish to receive commercial
+                    advertising from us, you may send an email to technology.klink@gmail.com. We will respond to your
+                    request for removal within 15 days.
+                </p>
+                <p>
+                    (d) Personal information subject to cancel the account You can cancel the previously registered
+                    account at any time, you can do so by sending an email to technology.klink@gmail.com. After deleting
+                    your account, we will stop providing products or services to you and delete your personal
+                    information upon your request, except as otherwise provided by law or regulation.
+                </p>
+                <p>
+                    (e) Personal information subject to obtain a copy of personal information You have the right to
+                    obtain a copy of your personal information, technology.klink@gmail.com operation to submit a
+                    request. Where technically feasible, such as data interface matching, we may also transfer a copy of
+                    your personal information directly to a third party designated by you at your request.
+                </p>
+                <p>
+                    (f) Binding Information System Automated Decisions In some business functions, we may make decisions
+                    based solely on non-manual automated decision making mechanisms, including information systems,
+                    algorithms, etc. If these decisions significantly affect your legal rights, you have the right to an
+                    explanation. If these decisions significantly affect your legal rights, you have the right to seek
+                    an explanation from us and we will provide appropriate remedies.
+                </p>
+                <p>
+                    (g) Responding to your request as described above For security purposes, you may be required to
+                    provide a written request or otherwise prove your identity. We may ask you to verify your identity
+                    before we process your request. We will respond within 15 days. In principle, we do not charge a fee
+                    for your reasonable requests, but we will charge a cost fee for multiple repetitive requests that
+                    exceed reasonable limits, as appropriate. We may refuse requests that are unnecessarily repetitive,
+                    require excessive technical means (for example, requiring the development of new systems or
+                    fundamental changes to current practices), pose a risk to the legal rights of others, or are highly
+                    impractical (for example, involving the backup of information stored on tapes). In the following
+                    cases, we will not be able to respond to your request in accordance with the requirements of laws
+                    and regulations: 1. if it is related to national security or national defense security; 2. if it is
+                    related to public safety, public health or significant public interest; 3. if it is related to crime
+                    investigation, prosecution and trial; 4. if there is sufficient evidence of subjective malice or
+                    abuse of your rights; 5. if responding to your request will result in serious damage to your or
+                    other individuals' or organizations' Legitimate rights and interests are seriously damaged.
+                </p>
+                <hr>
+
+                <h3>
+                    V.How we handle personal information of children
+                </h3>
+                <p>
+                    Our products are primarily intended for adults. Children may not create their own user accounts
+                    without the consent of their parents or guardians. Where we collect personal information from
+                    children with parental consent, we will use or publicly disclose this information only as permitted
+                    by law, with the express consent of the parent or guardian, or as necessary to protect the child.
+                    Although local laws and customs define children differently, we consider anyone under the age of 10
+                    to be a child. If we discover that we have collected personal information from a child without prior
+                    verifiable parental consent, we will attempt to delete the data as soon as possible.
+                </p>
+                <hr>
+
+                <h3>
+                    VI. How your personal information is transferred globally
+                </h3>
+                <p>
+                    In principle, because we provide our products or services through resources and servers located
+                    around the world, this means that we may transfer some of your personal information to, or subject
+                    your personal information to access from, jurisdictions outside of the country where you use the
+                    product or service, for the purposes of such transfer. Such jurisdictions may have different data
+                    protection laws or even no such laws. In such cases, we will we will assess the security measures
+                    for data in accordance with the methods and relevant standards established by the national Internet
+                    information department in conjunction with the State Council and comply with their requirements. For
+                    example, we will request your consent for cross-border transfers of personal information or
+                    implement security initiatives such as data de-identification prior to cross-border data transfers.
+                    If the cross-border transfer of data exceeds the scope of your authorization, we will separately
+                    seek your authorization.
+                </p>
+                <hr>
+
+                <h3>
+                    VI.How to update this privacy policy
+                </h3>
+                <p>
+                    We may make adjustments or changes to this Privacy Policy from time to time, and any updates to this
+                    Privacy Policy will be posted on our website with the updated time, and will be effective three days
+                    after the date of notification or posting, unless otherwise mandated by laws, regulations or
+                    regulatory requirements. If you continue to use any of our services or visit our related websites
+                    after the adjustment or change of the privacy policy, we believe that this means that you have fully
+                    read, understood and accepted the revised privacy policy and are bound by it.
+                </p>
+                <hr>
+
+                <h3>
+                    VII.How to contact us
+                </h3>
+                <p>
+                    📝 If you have any questions, comments or suggestions regarding this privacy policy, please contact
+                    us at Email: technology.klink@gmail.com and Telegram: @KlinkTechnology
+                </p>
+
+            </article>
+
+            <!-- <nav class="blog-pagination" aria-label="Pagination">
+                <a class="btn btn-outline-primary" href="#">Older</a>
+                <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+            </nav> -->
+        </div>
+
+    </main>
+
+    <footer class="blog-footer">
+        <p>Klink Privacy & Policy Build for <a href="https://www.facebook.com/KlinkTrade/">Klink</a> by <a
+                href="https://twitter.com/mdo">Klink</a>.</p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
